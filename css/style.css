@@ -9646,6 +9646,10 @@ textarea.form-control {
   #news-slider{
     margin-top: 80px;
 }
+.service-back{
+  background-color: #efefef;
+}
+/*slider*/
 .post-slide{
     background: #fff;
     margin: 20px 15px 20px;
