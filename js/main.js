@@ -440,7 +440,6 @@ $(function() {
 });
 
 $(document).ready(function() {
-	print('555')
     $("#news-slider").owlCarousel({
         items : 4,
         autoPlay:true,
