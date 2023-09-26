@@ -9879,6 +9879,7 @@ textarea.form-control {
       width: 50%;
       border: none;
       color: #ccc;
+      font-size: 30px;
       background-color: transparent;
       padding: 0.2em 1.5em;
     }

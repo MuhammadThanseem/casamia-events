@@ -440,13 +440,22 @@ $(function() {
 });
 
 $(document).ready(function() {
+	print('555')
     $("#news-slider").owlCarousel({
         items : 4,
-        itemsDesktop:[1199,4],
-        itemsDesktopSmall:[980,2],
-        itemsMobile : [600,1],
         autoPlay:true,
         loop:true,
+		responsive:{
+			0:{
+			  items:1
+			},
+			600:{
+			  items:2
+			},
+			1000:{
+			  items:4
+			}
+		  }
     });
 });
 
