@@ -19,6 +19,15 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      .m-intro:before {
+          background-image: url("images/circle_inner_opt.png");
+      }
+
+      .m-intro:after {
+          background-image: url("images/circle_outer_opt.png");
+      }
+  </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -63,17 +72,20 @@
     <section>
       <img src="images/home.jpg" class="home-img">
     </section>
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-      <div class="container-fluid px-md-5">
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb m-intro" id="about-section">
+      <div class="container-fluid px-md-5" >
         <div class="row justify-content-center py-5 mt-5">
           <div class="row justify-content-start pb-3">
             <div class="col-md-12 heading-section text-center ftco-animate">
               <h1 class="big">Our Story</h1>
               <h2 class="mb-4">Our Story</h2>
+              <h5>Proin consequat placerat eros hendrerit massa nec.</h5>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra turpis sit amet erat maximus, et scelerisque justo posuere. Nullam iaculis, est id malesuada vulputate, felis justo pulvinar quam, vel varius nisl odio at felis. Aliquam feugiat justo non tortor tincidunt, nec ullamcorper massa auctor. In nec posuere ex. Proin consequat placerat eros, vel hendrerit massa mollis nec. Duis volutpat, diam sed laoreet interdum, orci lorem eleifend ante, efficitur ultricies nibh risus nec dolor. Suspendisse venenatis enim in sapien pharetra semper. Nulla a quam hendrerit, auctor turpis id, tempus ipsum. Aenean consectetur hendrerit tincidunt.
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <section class="ftco-section" id="services-section">
@@ -237,7 +249,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 shadow">
               <div class="text">
-                <strong class="number" data-number="10">0</strong>
+                <strong class="number" data-number="100">0</strong>
                 <span>Complete Projects</span>
               </div>
             </div>
