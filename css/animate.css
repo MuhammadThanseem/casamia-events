@@ -3376,17 +3376,6 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp;
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
-
 
 /* Hero element
 -------------------------------------------------- */
@@ -3443,10 +3432,10 @@ body {
 
 .m-intro:before {
   background-size: 100% auto;
-  -webkit-animation: rotate 30s infinite linear;
-  -moz-animation: rotate 30s infinite linear;
-  -o-animation: rotate 30s infinite linear;
-  animation: rotate 30s infinite linear;
+  -webkit-animation: rotate 80s infinite linear;
+  -moz-animation: rotate 80s infinite linear;
+  -o-animation: rotate 80s infinite linear;
+  animation: rotate 80s infinite linear;
 }
 
 .m-intro:after {
