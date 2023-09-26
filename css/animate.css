@@ -3380,28 +3380,6 @@ Copyright (c) 2015 Daniel Eden
 /* Hero element
 -------------------------------------------------- */
 
-.splash {
-  width: 99vw;
-  height: 99vh;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.splash-container {
-  z-index: 2;
-}
-
-.splash-image {
-  max-width: 70%;
-  min-width: 25em;
-}
-
 .m-intro {
   text-align: center;
   display: flex;
@@ -3432,18 +3410,12 @@ Copyright (c) 2015 Daniel Eden
 
 .m-intro:before {
   background-size: 100% auto;
-  -webkit-animation: rotate 80s infinite linear;
-  -moz-animation: rotate 80s infinite linear;
-  -o-animation: rotate 80s infinite linear;
   animation: rotate 80s infinite linear;
 }
 
 .m-intro:after {
   background-size: 100% auto;
-  -webkit-animation: rotate 80s infinite linear;
-  -moz-animation: rotate 80s infinite linear;
-  -o-animation: rotate 80s infinite linear;
-  /* animation: rotate 80s infinite linear; */
+  animation: rotate 80s infinite linear;
 }
 
 /* Responsive layout for phones */
@@ -3456,36 +3428,6 @@ Copyright (c) 2015 Daniel Eden
 /* Animation for the hero element
 -------------------------------------------------- */
 
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -3496,108 +3438,6 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-/* Text typing animation
--------------------------------------------------- */
-
-.typewriter_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: clamp(2rem, 2.8vw, 5rem);
-}
-
-.typewriter {
-  overflow: hidden;
-  border-right: 0.15em solid #31373e;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 2.75s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 32ch;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #31373e;
-  }
-}
-
-/* Scrolling Indicator (mouse wheel)
--------------------------------------------------- */
-
-.mouse {
-  display: block;
-  margin: 0 auto;
-  width: 43px;
-  height: 80px;
-  border-radius: 53px;
-  border: 2px solid #ff0041;
-  position: absolute;
-  top: 85%;
-  position: absolute;
-  left: 50%;
-  margin-left: -14px;
-}
-
-.mouse span {
-  display: block;
-  margin: 6px auto;
-  width: 3px;
-  height: 7px;
-  border-radius: 100%;
-  background: #ff0041;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-  animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(52px);
-    transform: translateY(52px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(52px);
-    -ms-transform: translateY(52px);
-    transform: translateY(52px);
-  }
-}
 
 /* Image animations on scroll
 -------------------------------------------------- */
@@ -3626,86 +3466,6 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Border for the rounded images */
-
-.rounded-header-image {
-  border-radius: 50%;
-  border: 5px solid rgb(245, 245, 245);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.rounded-header-image:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.marketing h2 {
-  font-weight: 400;
-}
-
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-}
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
-}
-
-/* Cards and card columns
------------------------------ */
-
-.card-container {
-  margin: 0 50px;
-}
-
-.card-columns {
-  flex-wrap: wrap;
-}
-
-.card:hover {
-  background: linear-gradient(90deg, #cc9add 8.06%, #ebad98 106.93%);
-  text-decoration: none;
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover .card-title,
-.card:hover .card-subtitle,
-.card:hover .card-text {
-  color: white;
-}
-
-.card:hover .card-link {
-  color: rgb(231, 231, 231);
-}
-
-@media (min-width: 768px) {
-  .card {
-    flex-basis: calc(33.33% - 30px);
-  }
-}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
