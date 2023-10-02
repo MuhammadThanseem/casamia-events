@@ -9886,6 +9886,9 @@ textarea.form-control {
     .move-btn:first-child {border-right: none;}
     .move-btn.left  { cursor: w-resize; }
     .move-btn.right { cursor: e-resize; }
-    
+
+canvas{
+  position: absolute;
+}   
     
 
