@@ -9890,5 +9890,14 @@ textarea.form-control {
 canvas{
   position: absolute;
 }   
+
+.image-text{
+    position: absolute;
+    color: white;
+    margin-top: -600px;
+    font-weight: bold;
+    margin-left: 100px;
+    font-size: 70px;
+}
     
 
