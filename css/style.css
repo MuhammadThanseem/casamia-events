@@ -12840,7 +12840,7 @@ canvas {
 /* Additional media queries for other screen sizes if needed */
 @media (max-width: 480px) {
   .text-overlay {
-    top: 40%; /* Vertically center the text */
+    top: 50%; /* Vertically center the text */
     left: 40%; /* Horizontally center the text */
     font-size: 20px; /* Further adjust text size for even smaller screens */
   }
@@ -12867,5 +12867,23 @@ canvas {
 @media (max-width: 480px) {
   .img-logo{
     width: 80px;
+  }
+}
+
+.story{
+  font-size: 20px;
+  padding: 0px;
+}
+@media (max-width: 768px) {
+  .story{
+    font-size: 18px;
+    padding: 0px;
+  }
+}
+/* Additional media queries for other screen sizes if needed */
+@media (max-width: 480px) {
+  .story{
+    font-size: 18px;
+    padding: 15px;
   }
 }
