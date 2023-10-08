@@ -12547,9 +12547,6 @@ textarea.form-control {
   stroke-linecap: round;
 }
 
-#news-slider {
-  margin-top: 80px;
-}
 .service-back {
   background-color: #efefef;
 }
@@ -12856,7 +12853,7 @@ canvas {
 
 .img-logo{
   width: 150px;
-  background-image: url(../images/logo.png);
+  background-image: url("../images/logo.png");
 }
 @media (max-width: 768px) {
   .img-logo{
