@@ -135,6 +135,7 @@
 
 	// scroll
 	var scrollWindow = function() {
+		let img= document.getElementById('img-logo')
 		$(window).scroll(function(){
 			var $w = $(this),
 					st = $w.scrollTop(),
@@ -143,11 +144,13 @@
 
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
+					img.src="images/logo_black.png"
 					navbar.addClass('scrolled');	
 				}
 			} 
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
+					img.src="images/logo.png"
 					navbar.removeClass('scrolled sleep');
 				}
 			} 
