@@ -12569,7 +12569,7 @@ textarea.form-control {
 }
 .post-slide .post-img img {
   width: 100%;
-  height: auto;
+  height: 180px;
   transform: scale(1, 1);
   transition: transform 0.2s linear;
 }
@@ -12604,7 +12604,7 @@ textarea.form-control {
 }
 .post-slide .post-content {
   background: #fff;
-  padding: 2px 20px 40px;
+  padding: 2px 20px 10px;
   border-radius: 15px;
 }
 .post-slide .post-title a {
@@ -12821,11 +12821,12 @@ canvas {
 .text-overlay {
   position: absolute;
   top: 40%; /* Vertically center the text */
-  left: 30%; /* Horizontally center the text */
+  left: 35%; /* Horizontally center the text */
   transform: translate(-50%, -50%); /* Center the text precisely */
   color: #fff; /* Set text color to white or your preference */
   font-size: 60px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
@@ -12842,5 +12843,29 @@ canvas {
     top: 40%; /* Vertically center the text */
     left: 40%; /* Horizontally center the text */
     font-size: 20px; /* Further adjust text size for even smaller screens */
+  }
+}
+
+.animate-text {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+.img-logo{
+  width: 150px;
+  background-image: url(../images/logo.png);
+}
+@media (max-width: 768px) {
+  .img-logo{
+    width: 80px;
+  }
+}
+/* Additional media queries for other screen sizes if needed */
+@media (max-width: 480px) {
+  .img-logo{
+    width: 80px;
   }
 }

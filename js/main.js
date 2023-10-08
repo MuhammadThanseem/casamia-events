@@ -1021,3 +1021,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		};
   }());
   
+  function displayWord() {
+	var words = document.getElementsByClassName("animate-text");
+  var wordCounter = 0;
+  
+  setInterval(updateWord,2000);
+  
+  function updateWord() {
+  	if (wordCounter >= words.length) wordCounter = 0;
+  	for(var i = 0; i < words.length; i++) {
+    	words[i].classList.remove('active');
+    }
+		words[wordCounter].classList.add('active');
+   	wordCounter++;
+  }
+}
+displayWord();
