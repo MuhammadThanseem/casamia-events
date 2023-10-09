@@ -12870,11 +12870,13 @@ canvas {
 .story{
   font-size: 20px;
   padding: 0px;
+  text-align: justify;
 }
 @media (max-width: 768px) {
   .story{
     font-size: 18px;
     padding: 0px;
+    text-align: justify;
   }
 }
 /* Additional media queries for other screen sizes if needed */
@@ -12882,5 +12884,6 @@ canvas {
   .story{
     font-size: 18px;
     padding: 15px;
+    text-align: justify;
   }
 }

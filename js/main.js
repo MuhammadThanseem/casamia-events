@@ -565,6 +565,9 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 		'images/Gallery/5.JPG',
 		'images/Gallery/6.JPG',
 		'images/Gallery/7.JPG',
+		'images/Gallery/9.JPG',
+		'images/Gallery/10.JPG',
+		'images/Gallery/11.JPG',
 	];
 	
 	//Set Initial Featured Image
