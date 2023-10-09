@@ -557,7 +557,7 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 //Start this baby up
 (function init() {
 	var images = [
-		'https://drive.google.com/uc?export=view&id=1LxBLQkyIGsrMEQ4f8hxJF0954uOwAINP',
+		'images/Gallery/8.JPG',
 		'images/Gallery/1.JPG',
 		'images/Gallery/2.JPG',
 		'images/Gallery/3.JPG',
