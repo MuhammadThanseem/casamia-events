@@ -6,16 +6,18 @@
  document.addEventListener("DOMContentLoaded", function() {
 	
     // Your JavaScript code here
+	document.getElementById('transalateImg').src = "images/ma.png"
 	document.getElementById('storyHead').textContent = "Our Story"
     document.getElementById("storyText").textContent = "The hero's aspiration for a permanent job was born amidst a small gang performing service work in the countryside under the management of 'Casamia' In the face of daunting obstacles and difficulties that loomed like mountains before the realization of this dream, certain remarkable individuals emerged, akin to divine grace, to help secure the heart's desire. Today, with the unwavering courage, attitude, and dedication of the hero Shabeer, who knelt, pitched, walked, ran, and jumped through challenges, he proudly stands in the field of management while upholding the hallmark of service that 'Casamia' instilled. There are no complaints, no disheartened customers, and homeowners can rest assured about their plans. Casamia Event Management continues its journey with a multitude of satisfied customers who have seen their dreams fulfilled, all without a single penny of regret."
 	const translateButton = document.getElementById("transalate");
 	translateButton.addEventListener("click", function () {
-		console.log('uuu');
 		var text = document.getElementById('storyHead').textContent;
 		if (containsEnglish(text)){
+			document.getElementById('transalateImg').src = "images/e.png"
 			document.getElementById('storyHead').textContent = "ഞങ്ങളുടെ കഥ"
 			document.getElementById("storyText").textContent = "ഒരു ചെറിയ ചങ്ങായിക്കൂട്ടം നാട്ടിൻപുറത്തെ സേവനാടിസ്തിത തൊഴിൽ ചെയ്ത് നേരം പോയിരുന്ന നേരത്ത് നായകന്റെ ചിന്തയിൽ തെളിഞ്ഞ ഒരു സ്ഥിരം തൊഴിൽ എന്ന സ്വപനം. 'കസാമിയ' ഇവൻ മേനേജ് മെന്റ്. അതെ ആ സ്വപ്നസാക്ഷാൽകാരത്തിന് കടമ്പകളും, പ്രതിബന്ധനകളും, പ്രയാസങ്ങളും മുൻപിൽ വൻ മല പോലെ ഉയർന്ന് നിൽക്കുമ്പോൾ ഹൃദയാഗ്രഹത്തിന് നാഥന്റെ അനുഗ്രം പോലെ കൈപിടിക്കാൻ, സഹായിക്കാൻ ചില അമൂല്യ വ്യക്തിത്വങ്ങൾ മുന്നിൽ നിന്നു.അവർ താങ്ങായി, തണലായി മാറിയപ്പോ നായകന്റെ ചിന്തയിൽ,, കൂട്ടുകാരുടെ ഖൽബിൽ,,മൊട്ടായി നിന്നിരുന്ന ആ സ്വപ്നം പൂവായി വിരിയാൻ പിന്നെ കാലം തിടുക്കം കാട്ടി. മുട്ടിലിഴഞ്ഞ്, പിച്ചവെച്ച്, നടന്ന്, കിതച്ച് ഇന്ന് ഓട്ടവും, ചാട്ടവുമായി നായകൻ ഷബീറിന്റെ ഖൽബുറപ്പും, നിലപാടും, അർപ്പണ ബോധവും കൊണ്ട് 'കസാമിയ' തുടക്കം തൊടുത്ത സേവനം എന്ന മുഖമുദ്ദ്ര ഒട്ടും കൈമോശം വരാതെ ഇവൻ മേനേജ്മെന്റ് രംഗത്ത് അഭിമാനത്തോടെ തലയുയർത്തി നിൽക്കുന്നു. പിന്നിട്ട വഴികളിൽ പരാതികളില്ല, പ്രായാസപ്പെട്ടുപോയ കസ്റ്റമറുമില്ല. തിയ്യതി നിശ്ചയിച്ച് വീട്ടുകാരന് വിശ്രമിക്കാം. വീട്ടുകാരന്റെ സ്വപ്നത്തിനും ഒരു പണത്തൂക്കം മുന്നേ കസാമിയ ഇവൻമേനേജ് പൂർത്തീകരിച്ച് കൊണ്ടുള്ള നിരവധി സംതൃപ്ത കസ്റ്റമറുമായി യാത്ര തുടരുകയാണ്...."
 		}else{
+			document.getElementById('transalateImg').src = "images/ma.png"
 			document.getElementById('storyHead').textContent = "Our Story"
     		document.getElementById("storyText").textContent = "The hero's aspiration for a permanent job was born amidst a small gang performing service work in the countryside under the management of 'Casamia' In the face of daunting obstacles and difficulties that loomed like mountains before the realization of this dream, certain remarkable individuals emerged, akin to divine grace, to help secure the heart's desire. Today, with the unwavering courage, attitude, and dedication of the hero Shabeer, who knelt, pitched, walked, ran, and jumped through challenges, he proudly stands in the field of management while upholding the hallmark of service that 'Casamia' instilled. There are no complaints, no disheartened customers, and homeowners can rest assured about their plans. Casamia Event Management continues its journey with a multitude of satisfied customers who have seen their dreams fulfilled, all without a single penny of regret."
 		}
@@ -210,7 +212,6 @@ function containsEnglish(text) {
 		$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-
 			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
 			var $numbers = $('.number'); // Store all elements with class 'number'
 			var totalAnimations = $numbers.length; // Count of number elements

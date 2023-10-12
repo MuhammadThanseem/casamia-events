@@ -12891,9 +12891,10 @@ canvas {
 }
 
 .transalate{
-  border: none;
+  border: none !important;
+  outline: none !important;
   cursor: pointer;
   appearance: none;
   background-color: inherit;
-  position: absolute;
+  float: right;
 }
