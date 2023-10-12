@@ -211,17 +211,37 @@ function containsEnglish(text) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
+			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+			var $numbers = $('.number'); // Store all elements with class 'number'
+			var totalAnimations = $numbers.length; // Count of number elements
+
+			$numbers.each(function() {
+				var $this = $(this),
+					num = $this.data('number');
+				$this.animateNumber(
+					{
+						number: num,
+						numberStep: comma_separator_number_step
+					},
+					7000,
+					function() {
+						totalAnimations--; // Decrement the count when an animation is completed
+						if (totalAnimations === 0) {
+							// All animations are finished
+							let project = document.getElementById('projects');
+							let projectCount = project.innerText;
+							project.innerHTML = projectCount + '+'
+							let location = document.getElementById('location');
+							let locationCount = location.innerText;
+							location.innerHTML = locationCount + '+'
+							let clients = document.getElementById('clients');
+							let clientsCount = clients.innerText;
+							clients.innerHTML = clientsCount + '+'
+						}
+					}
+				);
+
+			});
 				
 			}
 		} , { offset: '95%' } );
@@ -259,7 +279,6 @@ function containsEnglish(text) {
 					});
 					
 				}, 100);
-				
 			}
 
 		} , { offset: '95%' } );
