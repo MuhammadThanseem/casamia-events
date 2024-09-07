@@ -11825,7 +11825,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #aa1818;
+  background: black;
   padding-top: 4em 0;
   z-index: 0;
 }
@@ -12226,7 +12226,7 @@ textarea.form-control {
 .contact-section .box .icon {
   width: 100px;
   height: 100px;
-  background: var(--casamia);
+  background: black;
   margin: 0 auto;
   margin-bottom: 10px;
   -webkit-border-radius: 50%;
